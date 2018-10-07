@@ -12,17 +12,306 @@
   </head>
   
   <body>
-	<div class="jumbotron jumbotron-fluid text-center" style="padding:15px;background-color:rgba(255,255,255,0.6);">
+	<div class="jumbotron jumbotron-fluid text-center" style="padding:0px;background-color:rgba(255,255,255,0.6);">
 		<div class="container">
 			<h1>Welcome to Padre Ken's!</h1>
 			<p style="font-style:italic;font-size:28px;">Better ingredients. Less racism.</p>
 		</div>
 	</div>
+	
+	<!-- menu jumbo -->
+	<div class="jumbotron jumbotron-fluid text-center" style="padding:0px;padding-bottom: 50px;background-color:rgba(255,255,255,0.6);">
+		<div class="container">
+			<h3 style="font-size:30px;">Build your custom, home-style pizza below:</h3>
+			<div class="options">
+				<div class="card-group">
+					<div class="pizzaSize card">
+						<div class="card-body">
+							<h5 class="card-title">Pizza Size</h5>
+							<div class="sizeOption" style="text-align:left">
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="sizeP" name="sizeRadio" class="custom-control-input" checked="checked" value="Personal Pizza">
+								  <label class="custom-control-label" for="sizeP">Personal - $6</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="sizeM" name="sizeRadio" class="custom-control-input" value="Medium Pizza">
+								  <label class="custom-control-label" for="sizeM">Medium - $10</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="sizeL" name="sizeRadio" class="custom-control-input" value="Large Pizza">
+								  <label class="custom-control-label" for="sizeL">Large - $14</label>
+								</div>							
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="sizeXL" name="sizeRadio" class="custom-control-input" value="Extra Large Pizza">
+								  <label class="custom-control-label" for="sizeXL">Extra Large - $16</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pizzaCrust card">
+						<div class="card-body">
+							<h5 class="card-title">Crust Style</h5>
+							<div class="crustOption" style="text-align:left">
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="crustPlain" name="crustRadio" class="custom-control-input" checked="checked" value="Plain Crust">
+								  <label class="custom-control-label" for="crustPlain">Plain Crust</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="crustGB" name="crustRadio" class="custom-control-input" value="Garlic Butter Crust">
+								  <label class="custom-control-label" for="crustGB">Garlic Butter Crust</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="crustCS" name="crustRadio" class="custom-control-input" value="Cheese-Stuffed Crust">
+								  <label class="custom-control-label" for="crustCS">Cheese-Stuffed Crust - $3</label>
+								</div>							
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="crustSpicy" name="crustRadio" class="custom-control-input" value="Spicy Crust">
+								  <label class="custom-control-label" for="crustSpicy">Spicy Crust</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="crustHS" name="crustRadio" class="custom-control-input" value="House Special Crust">
+								  <label class="custom-control-label" for="crustHS">House Special Crust</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pizzaCheese card">
+						<div class="card-body">
+							<h5 class="card-title">Cheese</h5>
+							<div class="cheeseOption" style="text-align:left">
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="cheeseRegular" name="cheeseRadio" class="custom-control-input" checked="checked" value="Regular">
+								  <label class="custom-control-label" for="cheeseRegular">Regular</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="cheeseNone" name="cheeseRadio" class="custom-control-input" value="No Cheese">
+								  <label class="custom-control-label" for="cheeseNone">No Cheese</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="cheeseExtra" name="cheeseRadio" class="custom-control-input" value="Extra Cheese">
+								  <label class="custom-control-label" for="cheeseExtra">Extra Cheese - $3</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-group">
+					<div class="pizzaSauce card">
+						<div class="card-body">
+							<h5 class="card-title">Sauce</h5>
+							<div class="sauceOption" style="text-align:left">
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="sauceMarinara" name="sauceRadio" class="custom-control-input" checked="checked" value="Marinara Sauce">
+								  <label class="custom-control-label" for="sauceMarinara">Marinara Sauce</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="sauceWhite" name="sauceRadio" class="custom-control-input" value="White Sauce">
+								  <label class="custom-control-label" for="sauceWhite">White Sauce</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="sauceBBQ" name="sauceRadio" class="custom-control-input" value="Barbeque Sauce">
+								  <label class="custom-control-label" for="sauceBBQ">Barbeque Sauce</label>
+								</div>							
+								<div class="custom-control custom-radio">
+								  <input type="radio" id="sauceNone" name="sauceRadio" class="custom-control-input" value="No Sauce">
+								  <label class="custom-control-label" for="sauceNone">No Sauce</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				  <div class="pizzaMeats card">
+					<div class="card-body">
+						<h5 class="card-title">Meats</h5>
+						<p class="card-text">First meat topping's on the house. $1 for every additional topping.</p>
+						<div class="meatsOption" style="text-align:left">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="meatsPep" name="meatsCheckbox" value="Pepperoni">
+								<label class="custom-control-label" for="meatsPep">Pepperoni</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="meatsSausage" name="meatsCheckbox" value=" Sausage">
+								<label class="custom-control-label" for="meatsSausage">Sausage</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="meatsCB" name="meatsCheckbox" value=" Canadian Bacon">
+								<label class="custom-control-label" for="meatsCB">Canadian Bacon</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="meatsGB" name="meatsCheckbox" value=" Ground Beef">
+								<label class="custom-control-label" for="meatsGB">Ground Beef</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="meatsAnch" name="meatsCheckbox" value=" Anchovy">
+								<label class="custom-control-label" for="meatsAnch">Anchovy</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="meantsChicken" name="meatsCheckbox" value=" Chicken">
+								<label class="custom-control-label" for="meantsChicken">Chicken</label>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="pizzaVeggies card">
+					<div class="card-body">
+					  <h5 class="card-title">Veggies</h5>
+					  <p class="card-text">Same here: first Veggie topping is on us. $1 for every additional topping.</p>
+					  <div class="veggiesOption" style="text-align:left">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="veggiesTom" name="veggiesCheckbox" value="Tomatoes">
+								<label class="custom-control-label" for="veggiesTom">Tomatoes</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="veggiesOnions" name="veggiesCheckbox" value=" Onions">
+								<label class="custom-control-label" for="veggiesOnions">Onions</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="veggiesOlives" name="veggiesCheckbox" value=" Olives">
+								<label class="custom-control-label" for="veggiesOlives">Olives</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="veggiesGP" name="veggiesCheckbox" value=" Green Peppers">
+								<label class="custom-control-label" for="veggiesGP">Green Peppers</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="veggiesMush" name="veggiesCheckbox" value=" Mushrooms">
+								<label class="custom-control-label" for="veggiesMush">Mushrooms</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="veggiesPine" name="veggiesCheckbox" value=" Pineapple">
+								<label class="custom-control-label" for="veggiesPine">Pineapple</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="veggiesSpinach" name="veggiesCheckbox" value=" Spinach">
+								<label class="custom-control-label" for="veggiesSpinach">Spinach</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="veggiesJala" name="veggiesCheckbox" value=" Jalapenos">
+								<label class="custom-control-label" for="veggiesJala">Jalapenos</label>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>			
+			</div>
+			</br>
+			<button type="button" class="btn btn-danger" onclick="orderSummary()" data-toggle="modal" data-target="#checkoutForm">Checkout</button>
+		</div>
+	</div>
+	<!-- end menu jumbo -->
+	
+	<!-- checkout form -->
+	<div class="modal fade" id="checkoutForm">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title w-100 text-center">Order Summary</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body" id="orderSum">							
+								<span id="sizeLine"></span>
+								<span id="crustLine"></span>
+								<span id="cheeseLine"></span>
+								<span id="sauceLine"></span>
+								<span id="meatsLine"></span>
+								<span id="veggiesLine"></span>
+								</br>
+								<span id="totalLine"></span>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger">Order</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							</div>
+						</div>
+					</div>
+				</div>
+	<!-- end checkout form -->
+	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
+	
+	<script>
+		function orderSummary() {
+			var pizzaSize = $( "input[type=radio][name=sizeRadio]:checked" ).val();
+			var sizeCost = 0;
+			if (pizzaSize == "Personal Pizza") {
+				sizeCost = 6;
+			} else if (pizzaSize == "Medium Pizza") {
+				sizeCost = 10;
+			} else if (pizzaSize == "Large Pizza") {
+				sizeCost = 14;
+			} else if (pizzaSize == "Extra Large Pizza") {
+				sizeCost = 16;
+			};
+			var sizeString = pizzaSize + " - $" + sizeCost + "<br>";
+			$('#sizeLine').html(sizeString);
+			
+			var pizzaCrust = $( "input[type=radio][name=crustRadio]:checked" ).val();
+			var crustCost = 0;
+			if (pizzaCrust == "Cheese-Stuffed Crust") {
+				crustCost = 3;
+			}
+			if (crustCost > 0) {
+				var crustString = pizzaCrust + " - $" + crustCost + "<br>";
+			} else {
+				var crustString = pizzaCrust + "<br>";
+			};
+			$('#crustLine').html(crustString);
+			
+			var pizzaCheese = $( "input[type=radio][name=cheeseRadio]:checked" ).val();
+			var cheeseCost = 0;
+			if (pizzaCheese == "Extra Cheese") {
+				cheeseCost = 3;
+			}
+			if (cheeseCost > 0) {
+				var cheeseString = pizzaCheese + " - $" + cheeseCost + "<br>";
+			} else {
+				var cheeseString = pizzaCheese + "<br>";
+			};
+			$('#cheeseLine').html(cheeseString);
+			
+			var pizzaSauce = $( "input[type=radio][name=sauceRadio]:checked" ).val();
+			var sauceString = pizzaSauce + "<br>";
+			$('#sauceLine').html(sauceString);
+			
+			var pizzaMeats = [];
+			$("input:checkbox[name=meatsCheckbox]:checked").each(function(){
+				pizzaMeats.push($(this).val());
+			});
+			var meatsString = pizzaMeats.toString();
+			var meatsCost = 0;
+			var meatsCostCount = pizzaMeats.length;
+			if (meatsCostCount > 1) {
+				meatsCost = (meatsCostCount - 1) * 1;
+				var meatsCostString = " - $" + meatsCost + "<br>";
+			} else {
+				var meatsCostString = "";
+			};
+			$('#meatsLine').html(meatsString + meatsCostString);
+			
+			var pizzaVeggies = [];
+			$("input:checkbox[name=veggiesCheckbox]:checked").each(function(){
+				pizzaVeggies.push($(this).val());
+			});
+			var veggiesString = pizzaVeggies.toString();
+			var veggiesCost = 0;
+			var veggiesCostCount = pizzaVeggies.length;
+			if (veggiesCostCount > 1) {
+				veggiesCost = (veggiesCostCount - 1) * 1;
+				var veggiesCostString = " - $" + veggiesCost + "<br>";
+			} else {
+				var veggiesCostString = "";
+			};
+			$('#veggiesLine').html(veggiesString + veggiesCostString);
+			
+			var pizzaTotal = sizeCost + crustCost + cheeseCost + meatsCost + veggiesCost;
+			$('#totalLine').html("Total Cost: $" + pizzaTotal);
+		}
+	</script>
+	
   </body>
 </html>
